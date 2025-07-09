@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/pexels-philippedonn-1133957.jpg" alt="bootstrap" width="30" height="24">
+            mobile Shoppe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="product.html">Products</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="photo_gallery.html">Photo</a></li>
+                  <li><a class="dropdown-item" href="video_gallery.html">Video</a></li>
+                 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="contact.html">Contacts</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="active" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item ">
+            <img src="images/banner pexbay1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner-pexbay3.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/emotions-pexbay4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/nature-pexbay2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Four slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img src="images/banner pex.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fifth slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<!-- accordian and progress bar -->
+      <section class="mt-5">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-6">
+                <h1>Faqs</h1>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Why are FAQs Important?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Every enterprise has customers and employees who require answers about a business, its products, terms and conditions, and more. It's best practice to compile all the basic and most commonly asked questions and concise explanations in a place that's easily accessible. A help center or an FAQ page is among the most important pages on a website. FAQ pages also educate potential customers and are an important part of the sales funnel. FAQ pages can be comprehensive, yet businesses shouldn't rely on static lists as there may be multiple answers to the same question or nuances to each question asked.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How To Handle FAQs Effectively?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>To handle FAQs correctly, enterprises can use other technologies such as AI-infused chatbots to provide a more significant level of assistance to users — quick and efficient responses to frequently asked questions is vital.Third-party tools can be used to provide better assistance to customers. The better you handle the FAQ pages, the more likely you are to gain and retain customers. Here are few points you should consider:</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How to Write an Effective FAQ Page?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Creating an FAQ page might seem like a walk in the park. But if you just jump in without a plan, you’ll end up with subpar results.
+
+                          Thankfully, it’s not rocket science. And with a couple of simple tips on what should be included in your FAQ, you can elevate your FAQ page to FAQ’in awesome heights!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                        Include Real Frequently Asked Questions?
+                      </button>
+                    </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Don’t laugh. This one seems blindingly obvious. But you’d be surprised at the number of FAQ sections that don’t adhere to this simple principle.
+                        here’s nothing worse than visiting a FAQ section to find a bunch of patronizing questions designed to showcase how wonderful the company is. Don’t do that.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                        Include Real Frequently Asked Questions?
+                      </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Don’t laugh. This one seems blindingly obvious. But you’d be surprised at the number of FAQ sections that don’t adhere to this simple principle.There’s nothing worse than visiting a FAQ section to find a bunch of patronizing questions designed to showcase how wonderful the company is. Don’t do that.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6">
+                <h1>Skills</h1>
+                <div class="progress mb-3" role="progressbar" aria-label="Default striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">sql</div>
+                </div>
+                <div class="progress  mb-3" role="progressbar" aria-label="Success striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: 75%">HTML</div>
+                </div>
+                <div class="progress  mb-3" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width: 50%">CSS</div>
+                </div>
+                <div class="progress  mb-3" role="progressbar" aria-label="Warning striped example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" style="width: 40%">BOOTSTRAP</div>
+                </div>
+                <div class="progress  mb-3" role="progressbar" aria-label="Danger striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" style="width: 80%">C Langunge</div>
+                </div>
+              </div>
+           </div>
+        </div>
+      </section>
+<!-- card section -->
+      <section class="mt-5">
+        <div class="container">
+           <div class="row">
+            <h1>Pune Places</h1>
+              <div class="col-md-3">
+                <div class="card border border-success" >
+                  <img src="images/appu ghar img 2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Appu Ghar</h5>
+                    <p class="card-text">A theme park, Appu Ghar is situated in Indira Gandhi Udyan, which was earlier, used to be called as Bund Garden. Often referred as a mini Disney land of Pune, this place not just offers innumerable fun rides and but also a serene lake and hilly </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AppuGhar">
+                      More info
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border border-success">
+                  <img src="images/shanivar wada.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Shaniwar Wada</h5>
+                    <p class="card-text">The Shaniwar Wada was normally the seven-story capital building of the Peshwas of the Maratha Empire. It was supposed to be made entirely of stone. However, after the completion of the base floor or the first story, the people of Satara (the national capital) complained to the Chhatrapati </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ShaniwarWada">
+                      More info
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border border-success">
+                  <img src="images/Lal mahal.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Lal Mahal</h5>
+                    <p class="card-text">The Lal Mahal was established in 1630 AD by Chhatrapati Shivaji Maharaj's father,Maharaj Shahaji Bhosale It was the childhood home of Chhatrapati Shivaji Maharaj The Mahal is famous for an encounter between Chhatrapati Shivaji Maharaj and Shaista Khan </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LalMahal">
+                      More info
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border border-success">
+                  <img src="images/birld valley.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Birld Valley</h5>
+                    <p class="card-text">Bird valley is nice place. A huge eagle statue at centre is very attractive in lake. Paddle and motor boating is available here. That was an amazing experience while boating at sunset time. Walking place is available around the lake and</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#BirldValley">
+                      More info
+                    </button>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </div>
+      </section>
+  <!-- Appu Ghar Model -->
+      <div class="modal fade" id="AppuGhar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Appu Ghar</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Appu Ghar</h1>
+              <p>The park is an ideal place for children of all ages, especially on their birthdays and also the weekends.
+              You can enjoy your time in Appu Ghar, and have loads of fun on roller coaster rides. If you are looking for a great amusement park in Pune city, you cannot go wrong with Appu Ghar.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- shanivar wada model -->
+      <div class="modal fade" id="ShaniwarWada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Shaniwar Wada</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Shaniwar Wada</h1>
+              <p>Peshwa Baji Rao I, prime minister to Chattrapati Shahu, laid the ceremonial foundation of his own residence on Saturday, 10 January 1730. It was named Shaniwar Wada from the Marathi words Shaniwar (Saturday) and Wada (a general term for any residence complex). Teak was imported from the jungles of Junnar, stone was brought from the nearby quarries of Chinchwad, and Lime (mineral) was brought from the lime-belts of Jejuri. Shaniwarwada was completed in 1732, at a total cost of Rs. 16,110, a very large sum at that time</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Lal Mahal model -->
+      <div class="modal fade" id="LalMahal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Lal Mahal</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Lal Mahal</h1>
+              <p>Lal Mahal located near Shaniwar Wada in Pune is a historic landmark of the 16th century. Subject to innumerable attacks and initial revival, the palace has significant stories to tell. It was first restored by Shivaji Maharaj's father Shahaji Bhosle for his family to stay in the 1630s. From being a childhood home for Chhatrapati Shivaji to taking Shaistekhan head-on, this red coloured structure is an architectural marvel depicting craftsmanship and culture of that time.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Birld Valley maodel -->
+      <div class="modal fade" id="BirldValley" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Birld Valley</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Bird Valley Udyan is a garden and tourist attraction located in Pimpri-Chinchwad, Maharashtra. The average rating of this place is 4.00 out of 5 stars based on 11999 reviews. The street address of this place is 01, near Maruti Mandir, Vidya Nagar, Chinchwad, Pimpri-Chinchwad, Maharashtra 411019, India. It is about 0.76 kilometers away from the Chinchvad railway station.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer section -->
+       <section class="mt-5 bg-dark text-white">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+               <h1>About</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi ab, aliquid quae inventore exercitationem rerum iusto totam dolores perferendis. Dolores doloribus blanditiis maxime facilis a sed ratione molestiae ut</p>
+            </div>
+            <style>
+              .ul_color{
+                color: white;
+              }
+            </style>
+            <div class="col-md-3">
+              <h1>Quick Link</h1>
+              <ul class="ul_color">
+                <li><a class="ul_color" href="index.html">Home</a></li>
+                <li><a class="ul_color" href="about.html">About</a></li>
+                <li><a class="ul_color" href="product.html">Product</a></li>
+                <li><a class="ul_color" href="photo_gallery.html">Photo Gallery</a></li>
+                <li><a class="ul_color" href="video_gallery.html">Video Gallery</a></li>
+                <li><a class="ul_color" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <style>
+              .ul_color{
+                color: white;
+              }
+              .social{
+                margin-right: 15px;
+                font-size: 20px;
+              }
+              .bi-facebook{
+                color: blue;
+              }
+              .bi-linkedin{
+                color: rgb(54, 54, 241);
+              }
+              .bi-instagram{
+                color: purple;
+              }
+              .bi-youtube{
+                color: red;
+              }
+              .bi.whatsapp{
+                color: green;
+              }
+              .bi.telephone{
+                color: aliceblue;
+              }
+            </style>
+            <div class="col-md-3">
+              <h1>Social Media</h1>
+             <a href="https://www.instagram.com/" target="_blank"> <i class="bi bi-instagram social"></i></a>
+             <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube social "></i></a>
+             <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook social"></i></a>
+             <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin social"></i></a>
+            </div>
+            <div class="col-md-3">
+              <h1>Contact Us</h1>
+              <i class="bi bi-geo-alt-fill"><p>"B Wing" Flat No.713 </p><p>Ganesh Siddhi By SB Patil Group.Newale Vasti Chikhli,pune</p></i>
+              <a href="tel:9028429894"> <i class=" social bi-telephone"></i>  7385637004 </a><br>
+              <a href="https://api.whatsapp.com/send?phone=+919028429894" target="_blank"><i class="social bi bi-whatsapp"></i></a><br>
+              <a href="mailto:khairnarkalyani47@gmail.com"><i class="bi bi-envelope"> khairnarkalyani47@gmail.com</i></a>
+              
+            </div>
+          </div>
+        </div>
+       </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
